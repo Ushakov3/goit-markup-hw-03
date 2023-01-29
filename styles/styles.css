@@ -1,0 +1,272 @@
+:root {
+  --title-text-color: #2e2f42;
+  --primary-text-color: #434455;
+  --accent-color: #404bbf;
+  --primary-bg-color: #ffffff;
+}
+
+/* html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--title-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-btn,
+.list-btn {
+  cursor: pointer;
+}
+
+/* --------------------------------------Basic HTML------------------------------ */
+
+/* ------------------------------------logo---------------------------------  */
+
+.header {
+  background-color: var(--primary-bg-color);
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  outline: 2px solid turquoise;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #272c7f;
+}
+/* ------------------------------------logo---------------------------------  */
+
+/* ------------------------------------nav----------------------------  */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.portfolio .link {
+  color: var(--accent-color);
+}
+
+/* ------------------------------------nav----------------------------  */
+
+/* ----------------------------------contacts-------------------------- */
+
+.header-contact-list .mail,
+.header-contact-list .tel {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+.tel:hover,
+.mail:hover {
+  color: var(--accent-color);
+}
+.tel:focus,
+.mail:focus {
+  color: var(--accent-color);
+}
+/* ----------------------------------contacts-------------------------- */
+
+/* ------------------------------------hero------------------------------------  */
+.main-part {
+  background: #2e2f42;
+  height: 600px;
+  text-align: center;
+}
+.main-part-title {
+  padding-top: 188px;
+  margin-bottom: 48px;
+
+  font-size: 56px;
+  line-height: 1.07;
+
+  color: #ffffff;
+}
+
+.main-btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px;
+
+  width: 169px;
+  height: 56px;
+  left: 636px;
+  top: 428px;
+}
+.main-btn:hover,
+.main-btn:focus {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+/* ------------------------------------hero------------------------------------  */
+
+/* --------------------------------Hidden title--------------------------------  */
+.text-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.text-list-item {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+/* --------------------------------Hidden title--------------------------------  */
+
+/* ------------------------------------about------------------------------------  */
+.about {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* ------------------------------------about------------------------------------  */
+
+/* ---------------------------------------Team------------------------------------ */
+.team {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.team-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-list-position {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+/* ---------------------------------------Team------------------------------------ */
+
+/* -----------------------------------------Footer----------------------------------- */
+.bottom-page {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7e9fc;
+}
+/* -----------------------------------------Footer----------------------------------- */
+
+/* ----------------------------------------Portfolio----------------------------------- */
+
+/* -----------------------------------------Hidden header----------------------------------- */
+/* --------------------------------------------Buttons------------------------------------------- */
+
+.list-btn:hover,
+.list-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.list-btn {
+  font-family: inherit;
+  width: 116px;
+  height: 48px;
+  color: #4d5ae5;
+  background: #f4f4fd;
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------Buttons------------------------------------------- */
+
+/* --------------------------------------------List apps---------------------------------------------- */
+.list-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.list-text-item {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--primary-text-color);
+}
+
+/* --------------------------------------------List apps---------------------------------------------- */
+
+/* --------------------------------------------logo-link--------------------------------------------  */
+
+.bottom-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+.bottom {
+  background: #2e2f42;
+}
+
+/* --------------------------------------------logo-link--------------------------------------------  */
