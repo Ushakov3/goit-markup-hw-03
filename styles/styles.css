@@ -3,6 +3,8 @@
   --primary-text-color: #434455;
   --accent-color: #404bbf;
   --primary-bg-color: #ffffff;
+  --card-set-side-gap: 24px;
+  --card-set-top-gap: 48px;
 }
 
 html {
@@ -58,8 +60,9 @@ img {
 
 /* ------------------------------------logo---------------------------------  */
 
-.header {
+.page-header {
   background-color: var(--primary-bg-color);
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .conteiner {
@@ -123,6 +126,10 @@ span {
 
 .site-nav .item:not(:last-child) {
   margin-right: 40px;
+}
+
+.item > .btn-active-page-portfolio {
+  color: var(--accent-color);
 }
 
 /* ----------------------------------contacts-------------------------- */
@@ -288,10 +295,6 @@ span {
   list-style: none;
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
-}
 .conteiner-team {
   width: 264px;
   height: 380px;
@@ -308,12 +311,32 @@ h3 {
 .selection-team img {
   margin-bottom: 32px;
 }
+.selection-conteiner-team {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* -----------------------------------------Footer----------------------------------- */
 .bottom-page {
   font-size: 16px;
   line-height: 1.5;
   color: #e7e9fc;
+}
+
+.bottom {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.conteiner-bottom {
+  display: block;
+  width: 264px;
+  height: 110px;
+}
+
+.bottom-page {
+  margin: 0;
+  margin-top: 16px;
 }
 
 /* ----------------------------------------Portfolio----------------------------------- */
@@ -328,7 +351,6 @@ h3 {
 }
 .list-btn {
   font-family: inherit;
-  width: 116px;
   height: 48px;
   color: #4d5ae5;
   background: #f4f4fd;
@@ -340,7 +362,20 @@ h3 {
   line-height: 1.5;
 }
 
-/* --------------------------------------------Buttons------------------------------------------- */
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+}
+
+.button-list :not(:last-child) {
+  margin-right: 24px;
+}
+
+.button-list .list-btn {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
 /* --------------------------------------------List apps---------------------------------------------- */
 .list-item {
@@ -355,7 +390,42 @@ h3 {
   color: var(--primary-text-color);
 }
 
-/* --------------------------------------------List apps---------------------------------------------- */
+.card-apps {
+  margin-top: 72px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+
+  margin-top: calc(-1 * var(--card-set-top-gap));
+  margin-left: calc(-1 * var(--card-set-side-gap));
+}
+
+.card-set > .card-item {
+  flex-basis: calc(100% / 3 - var(--card-set-side-gap));
+
+  margin-left: var(--card-set-side-gap);
+  margin-top: var(--card-set-top-gap);
+}
+
+.list-item {
+  margin: 0;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+.list-text-item {
+  margin-top: 8px;
+  padding-left: 16px;
+}
+
+.card-item {
+  border: 1px solid #e7e9fc;
+}
 
 /* --------------------------------------------logo-link--------------------------------------------  */
 
@@ -369,6 +439,10 @@ h3 {
 }
 .bottom {
   background: #2e2f42;
+}
+
+.page-portfolio {
+  margin-top: 120px;
 }
 
 /* --------------------------------------------logo-link--------------------------------------------  */
