@@ -169,9 +169,10 @@ span {
 }
 .main-part-title {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 0;
 
   padding-top: 188px;
+  padding-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
 
@@ -217,7 +218,8 @@ span {
 }
 
 .selection-description {
-  margin-top: 120px;
+  margin-top: 0;
+  padding-top: 120px;
 }
 .description {
   display: flex;
@@ -238,7 +240,8 @@ span {
   text-transform: capitalize;
 }
 .selection-about {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about {
@@ -277,7 +280,7 @@ span {
 
 .selection-team {
   background-color: #f4f4fd;
-  margin-top: 120px;
+
   padding-bottom: 120px;
   text-align: center;
 }
@@ -365,7 +368,8 @@ h3 {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-top: 96px;
+  /* margin-top: 96px; */
+  padding-top: 96px;
 }
 
 .button-list :not(:last-child) {
@@ -391,7 +395,8 @@ h3 {
 }
 
 .card-apps {
-  margin-top: 72px;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 
 .card-set {
@@ -441,10 +446,4 @@ h3 {
   background: #2e2f42;
 }
 
-.page-footer {
-  margin-top: 120px;
-}
-
 /* --------------------------------------------logo-link--------------------------------------------  */
-
-/* selection-conteiner-team  */
