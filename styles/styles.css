@@ -28,14 +28,35 @@ img {
   max-width: 100%;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .visually-hidden {
@@ -51,26 +72,20 @@ img {
   margin: -1px;
 }
 
-.main-btn,
-.list-btn {
-  cursor: pointer;
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-/* --------------------------------------Basic HTML------------------------------ */
 
 /* ------------------------------------logo---------------------------------  */
 
 .page-header {
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid #e7e9fc;
-}
-
-.conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 span {
@@ -116,16 +131,16 @@ span {
   display: block;
 }
 
+.site-nav {
+  gap: 40px;
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
 .portfolio .link {
   color: var(--accent-color);
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .item > .btn-active-page-portfolio {
@@ -140,7 +155,6 @@ span {
 
 .header-contact-list .mail,
 .header-contact-list .tel {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-text-color);
@@ -166,17 +180,18 @@ span {
 .main-part {
   background: #2e2f42;
   text-align: center;
-}
-.main-part-title {
-  margin-top: 0;
-  margin-bottom: 0;
-
   padding-top: 188px;
-  padding-bottom: 48px;
+  padding-bottom: 188px;
+}
+
+.main-part-title {
+  max-width: 505px;
   font-size: 56px;
   line-height: 1.07;
-
   color: #ffffff;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-btn {
@@ -191,12 +206,15 @@ span {
   border-radius: 4px;
   border: 1px;
 
-  width: 169px;
-  height: 56px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  /* min-width: 169px; */
+  /* height: 56px; */
   left: 636px;
   top: 428px;
-
-  margin-bottom: 188px;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -259,64 +277,52 @@ span {
 }
 
 /* ---------------------------------------Team------------------------------------ */
-.team {
+.team-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-}
-
-.team-list {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  margin-bottom: 72px;
 }
 
 .team-list-position {
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--primary-text-color);
+  text-align: center;
+}
+
+.text-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .selection-team {
   background-color: #f4f4fd;
-
-  padding-bottom: 120px;
-  text-align: center;
-}
-
-.team {
-  margin-top: 0;
   padding-top: 120px;
-  margin-bottom: 72px;
+  padding-bottom: 120px;
 }
 
-.team-list,
-.team-list-position {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.conteiner-team {
-  width: 264px;
-  height: 380px;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 6px rgba(66, 46, 46, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.selection-team > p,
-h3 {
-  margin-top: 0;
-}
-
-.selection-team img {
-  margin-bottom: 32px;
-}
-.selection-conteiner-team {
+.team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
+}
+
+.list-item-conteiner {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #ffffff;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list-item-team {
+  width: calc((100% -72px) / 4);
 }
 
 /* -----------------------------------------Footer----------------------------------- */
@@ -344,8 +350,12 @@ h3 {
 
 /* ----------------------------------------Portfolio----------------------------------- */
 
-/* -----------------------------------------Hidden header----------------------------------- */
 /* --------------------------------------------Buttons------------------------------------------- */
+
+.section-apps {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .list-btn:hover,
 .list-btn:focus {
@@ -354,7 +364,7 @@ h3 {
 }
 .list-btn {
   font-family: inherit;
-  height: 48px;
+
   color: #4d5ae5;
   background: #f4f4fd;
 
@@ -363,26 +373,22 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .button-list {
   display: flex;
+  gap: 24px;
   justify-content: center;
-  /* margin-top: 96px; */
-  padding-top: 96px;
-}
-
-.button-list :not(:last-child) {
-  margin-right: 24px;
-}
-
-.button-list .list-btn {
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-bottom: 72px;
 }
 
 /* --------------------------------------------List apps---------------------------------------------- */
-.list-item {
+.list-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -392,11 +398,8 @@ h3 {
   line-height: 1.5;
 
   color: var(--primary-text-color);
-}
 
-.card-apps {
-  padding-top: 72px;
-  padding-bottom: 120px;
+  margin-top: 8px;
 }
 
 .card-set {
@@ -418,17 +421,12 @@ h3 {
   margin-top: var(--card-set-top-gap);
 }
 
-.list-item {
-  margin: 0;
+.card-content {
   padding-top: 32px;
   padding-left: 16px;
-}
-.list-text-item {
-  margin-top: 8px;
-  padding-left: 16px;
-}
+  padding-bottom: 32px;
+  background: #ffffff;
 
-.card-item {
   border: 1px solid #e7e9fc;
 }
 
