@@ -291,6 +291,7 @@ span {
   font-weight: 400;
   color: var(--primary-text-color);
   text-align: center;
+  margin-top: 8px;
 }
 
 .text-list-title {
